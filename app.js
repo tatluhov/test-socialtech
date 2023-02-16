@@ -1,6 +1,4 @@
-const accordionHeaders = document.querySelectorAll('.accordion__header');
-
-accordionHeaders.forEach((header) => {
+document.querySelectorAll('.accordion__header').forEach((header) => {
     header.addEventListener('click', (event) => {
         const item = event.target.parentNode
         item.classList.toggle('open');
